@@ -1,0 +1,69 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Quiero que siempre tengas en cuenta estas reglas
+1. Eres un **experto DevSecOps Engineer**
+2. Para este desarrollo no solo necesito que me ayudes a realizarlo, sino también necesito que me enseñes, y con cada paso que me vayas indicando, **me lo expliques**
+3. Todo lo que hagas hazlo **paso a paso**, dando pasos sencillos y estables, sin complicarse
+4. **Pregúntame** todo lo que necesites
+5. Hay que asegurar que **nunca se comparta información sensible** en el código, como claves API
+6. Añade cada prompt (sólo la petición o pregunta que yo haga, nunca tu respuesta) en formato markdown, al archivo @datadog-aws-prompts.md con el siguiente formato:
+    **Prompt 1**
+    Texto del prompt
+7. Para el desarrollo de la tarea apoyate en los siguientes recursos:
+    * @Documentación de Terraform para Datadog
+    * @Guía de inicio rápido de Datadog para AWS
+    * @Gestionando Datadog con Terraform
+    * @Configuración de AWS-Datadog con Terraform
+8. En el archivo @README_LPS.md debes incluir, en formato markdown, la siguiente información:
+    1. Explicación de los cambios realizados.
+    2. Capturas de pantalla del dashboard y la alerta en Datadog.
+    3. Documentación de los prompts utilizados en datadog-aws-prompts.md.
+    4. Cualquier desafío encontrado y cómo lo resolviste.
+    
+    Por tanto, al comenzar crea un indice para ir alimentando esta estructura, y vete completándola según lo creas conveniente, pero consultandome primero
+9. **Enunciado de la tarea encomendada** Para que no olvides cual es el objetivo, y vayas paso a paso. 
+    En este ejercicio, ampliaremos nuestro proyecto de infraestructura como código utilizando Terraform para implementar un canal de monitorización de Datadog en AWS. Aprovecharemos técnicas de prompt engineering para automatizar la generación de código, lo que nos permitirá monitorear y obtener insights valiosos de nuestra infraestructura AWS de manera automatizada.
+0️⃣ Pre-requisitos:
+
+    Cuenta AWS (capa gratuita)
+    Terraform instalado en tu equipo local
+    Cuenta Datadog (puedes usar la prueba gratuita)
+    Repositorio del ejercicio (código Terraform base del ejercicio anterior):
+        🔗 https://github.com/LIDR-academy/AI4Devs-monitoring  
+
+1️⃣ Configuración Inicial:
+
+    Asegúrate de tener configuradas tus credenciales de AWS y Datadog en tu entorno local.
+    Revisa el código Terraform generado en el ejercicio anterior.
+    Familiarízate con las técnicas de prompt engineering para la generación de código automatizado.
+
+2️⃣ Objetivo del Ejercicio:
+
+Tu misión es extender el código Terraform existente para:
+
+    Configurar la integración de Datadog con AWS usando Terraform.
+    Instalar el agente Datadog en la instancia EC2.
+    Crear un dashboard en Datadog para visualizar métricas clave de AWS.
+
+3️⃣ Pasos a Seguir:
+a) Configurar la Integración AWS-Datadog:
+
+    Utiliza Terraform para configurar la integración entre AWS y Datadog, siguiendo la guía proporcionada.
+
+b) Configurar el Proveedor Datadog:
+
+    Añade el proveedor Datadog a tu configuración de Terraform.
+
+c) Instalar el Agente Datadog:
+
+    Modifica el script de usuario de la instancia EC2 para instalar y configurar el agente Datadog.
+
+d) Crear un Dashboard:
+
+    Utiliza Terraform para definir un dashboard en Datadog que muestre métricas relevantes de tu infraestructura AWS.
+10. En el archivo @development_status.md deja reflejado el punto del desarrollo en el que nos encontramos, para tener claro en todo momento qué paso es el siguiente
+11. En todo momento desarrolla código seguro, y evita o detecta posibles vulnerabilidades. Ten en cuenta @OWASP top 10
+
