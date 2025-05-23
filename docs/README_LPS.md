@@ -43,3 +43,5 @@ Durante el desarrollo se presentaron varios desafíos relevantes:
   - *Solución:* Se usó `terraform apply -target=datadog_dashboard.aws_overview` para desplegar únicamente el dashboard.
 
 - **Documentación y trazabilidad:** Se mantuvo la documentación de los prompts y de cada paso relevante, asegurando trazabilidad y cumplimiento de buenas prácticas. 
+
+.
