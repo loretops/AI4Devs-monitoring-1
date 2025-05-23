@@ -44,4 +44,4 @@ Durante el desarrollo se presentaron varios desafíos relevantes:
 
 - **Documentación y trazabilidad:** Se mantuvo la documentación de los prompts y de cada paso relevante, asegurando trazabilidad y cumplimiento de buenas prácticas. 
 
-.
+# Cambio mínimo para forzar nueva PR
