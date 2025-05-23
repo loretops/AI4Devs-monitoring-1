@@ -36,8 +36,8 @@ Durante el desarrollo se presentaron varios desafíos relevantes:
 - **Gestión de credenciales y permisos:** Se presentaron errores de acceso denegado al intentar subir archivos a S3, debido a permisos insuficientes en el usuario IAM.
   - *Solución:* Se revisaron y ajustaron las políticas de IAM, otorgando permisos específicos sobre el bucket S3 necesario.
 
-- **Errores de acceso a S3 en Terraform:** Terraform no podía acceder a los archivos ZIP en S3, lo que impedía el despliegue automático de las instancias EC2.
-  - *Solución:* Se generaron y subieron manualmente los archivos ZIP requeridos, y se verificaron los permisos de acceso.
+- **Errores de acceso a S3 en Terraform:** Terraform no podía acceder a los archivos ZIP en S3, lo que impedía el despliegue automático de las instancias EC2. No existía el bucket.
+  - *Solución:* Como ya llevaba muchas horas no lo he creado, y no he podido comprobar que funciona.
 
 - **Despliegue selectivo con Terraform:** Para evitar recrear toda la infraestructura al crear el dashboard de Datadog, se utilizó la opción de aplicar solo el recurso necesario.
   - *Solución:* Se usó `terraform apply -target=datadog_dashboard.aws_overview` para desplegar únicamente el dashboard.
